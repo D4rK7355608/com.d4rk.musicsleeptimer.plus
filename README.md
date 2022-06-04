@@ -8,7 +8,6 @@
 ![GitHub Issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub License](https://img.shields.io/github/license/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
-![Codiga](https://api.codiga.io/project/)
 
 ## D4rK Music Sleep Timer Plus
 
