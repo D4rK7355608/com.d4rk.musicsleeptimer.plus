@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/d4rk7/AndroidStudioProjects/com.d4rk.musicsleeptimer.plus/app/src/main/res/drawable-anydpi/ic_launcher_foreground.xml" value="0.1485" />
+        <entry key="..\:/Users/d4rk7/AndroidStudioProjects/com.d4rk.musicsleeptimer.plus/app/src/main/res/drawable-anydpi/ic_music_off.xml" value="0.1485" />
+        <entry key="..\:/Users/d4rk7/AndroidStudioProjects/com.d4rk.musicsleeptimer.plus/app/src/main/res/mipmap-anydpi/ic_launcher.xml" value="0.1485" />
+        <entry key="..\:/Users/d4rk7/AndroidStudioProjects/com.d4rk.musicsleeptimer.plus/app/src/main/res/mipmap-night-anydpi/ic_launcher.xml" value="0.1485" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
