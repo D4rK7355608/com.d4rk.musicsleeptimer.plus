@@ -5,7 +5,7 @@
 ![Works with Android](https://img.shields.io/badge/Works%20with-Android-blue)
 ![GitHub issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.musicsleeptimer)
 ![Pull requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.musicsleeptimer?label=Pull%20requests)
-![GitHub license](https://img.shields.io/github/license/D4rK7355608/com.d4rk.musicsleeptimer?label=License)
+![GitHub license](https://img.shields.io/github/license/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge)
 ![code-grade](https://api.codiga.io/project/29073/status/svg)
 
 ## D4rK Music Sleep Timer Plus
@@ -56,7 +56,7 @@ __D4rK Music Sleep Timer is 100% free, open source inspired by SleepTimer by Sim
 
 __❗️Note❗️__ Don't look for a launcher icon, this app only provides a Quick Settings Tile.
 
-## Changelog [here](https://raw.githubusercontent.com/D4rK7355608/com.d4rk.musicsleeptimer/master/CHANGELOG.md)!
+## Changelog [here](https://raw.githubusercontent.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/master/CHANGELOG.md)!
 
 ## Screenshots:
 
@@ -101,11 +101,13 @@ Rate us 5 stars ⭐⭐⭐⭐⭐ if you are happy with the app.
 <a href="https://www.youtube.com/channel/UCgtHCg34rrDvdkjjjPW2jhQ"><img src="https://img.shields.io/badge/-Desene Animate-FF0000?style=flat&logo=Youtube&logoColor=white"/></a>
 <a href="https://patreon.com/D4rK7355608"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3DD4rK7355608%26type%3Dpatrons&style=flat"/></a>
 <a href="https://www.paypal.me/d4rkmichaeltutorials"><img src="https://img.shields.io/badge/PayPal-white?style=flat&logo=PayPal"/></a>
-<a href="https://twitter.com/D4rK7355608/"><img src="https://img.shields.io/twitter/follow/D4rK7355608?style=social"/></a>
+<a href="https://twitter.com/D4rK7355608/"><img src="https://img.shields.io/twitter/follow/D4rK7355608?color=blue&logo=Twitter&style=for-the-badge"/></a>
+<a href="https://www.youtube.com/c/D4rK7355608/"><img src="https://img.shields.io/youtube/channel/subscribers/UCLDi-rmSRry0pNL-oVvGJAw?color=darkred&logo=YouTube&logoColor=darkred&style=for-the-badge"/></a>
+<a href="https://github.com/D4rK7355608/"><img src="https://img.shields.io/github/followers/D4rK7355608?color=white&logo=GitHub&style=for-the-badge"/></a>
 
-[<img src="https://github.com/D4rK7355608/com.d4rk.cleaner/blob/master/img/badges/google_play_store.png"
+[<img src="https://raw.githubusercontent.com/steverichey/google-play-badge-svg/master/img/en_get.svg"
 alt="Get it on Google Play"
-height="90">](https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer)
+height="90">](https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer.plus)
 
 __Privacy Policy__ [here](https://sites.google.com/view/d4rk7355608/more/apps/music-sleep-timer/privacy-policy).
 

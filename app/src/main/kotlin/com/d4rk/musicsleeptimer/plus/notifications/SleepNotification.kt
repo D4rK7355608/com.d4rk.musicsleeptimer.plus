@@ -28,16 +28,10 @@ object SleepNotification {
             override fun title(context: Context) = context.getText(R.string.notification_action_cancel)
         },
         INCREMENT("com.d4rk.musicsleeptimer.action.INCREMENT") {
-            override fun title(context: Context) = context.getString(
-                R.string.notification_action_increment, MILLISECONDS.toMinutes(
-                    TIMEOUT_INCREMENT_MILLIS
-                ))
+            override fun title(context: Context) = context.getString(R.string.notification_action_increment, MILLISECONDS.toMinutes(TIMEOUT_INCREMENT_MILLIS))
         },
         DECREMENT("com.d4rk.musicsleeptimer.action.DECREMENT") {
-            override fun title(context: Context) = context.getString(
-                R.string.notification_action_decrement, MILLISECONDS.toMinutes(
-                    TIMEOUT_DECREMENT_MILLIS
-                ))
+            override fun title(context: Context) = context.getString(R.string.notification_action_decrement, MILLISECONDS.toMinutes(TIMEOUT_DECREMENT_MILLIS))
         },;
         companion object {
             fun parse(value: String?): Action? = values().firstOrNull { it.value == value }
@@ -61,21 +55,7 @@ object SleepNotification {
     private fun Context.show(timeout: Long = TIMEOUT_INITIAL_MILLIS) {
         require(timeout > 0)
         val eta = currentTimeMillis() + timeout
-        val notification = Notification.Builder(this, getString(R.string.notification_channel_id))
-            .setCategory(CATEGORY_EVENT)
-            .setVisibility(VISIBILITY_PUBLIC)
-            .setOnlyAlertOnce(true)
-            .setOngoing(true)
-            .setSmallIcon(R.drawable.ic_music_off)
-            .setSubText(DateFormat.getTimeInstance(SHORT).format(Date(eta)))
-            .setShowWhen(true).setWhen(eta)
-            .setUsesChronometer(true).setChronometerCountDown(true)
-            .setTimeoutAfter(timeout)
-            .setDeleteIntent(SleepAudioService.pendingIntent(this))
-            .addAction(Action.INCREMENT.action(this).build())
-            .addAction(Action.DECREMENT.action(this, cancel = timeout <= TIMEOUT_DECREMENT_MILLIS).build())
-            .addAction(Action.CANCEL.action(this).build())
-            .build()
+        val notification = Notification.Builder(this, getString(R.string.notification_channel_id)).setCategory(CATEGORY_EVENT).setVisibility(VISIBILITY_PUBLIC).setOnlyAlertOnce(true).setOngoing(true).setSmallIcon(R.drawable.ic_music_off).setSubText(DateFormat.getTimeInstance(SHORT).format(Date(eta))).setShowWhen(true).setWhen(eta).setUsesChronometer(true).setChronometerCountDown(true).setTimeoutAfter(timeout).setDeleteIntent(SleepAudioService.pendingIntent(this)).addAction(Action.INCREMENT.action(this).build()).addAction(Action.DECREMENT.action(this, cancel = timeout <= TIMEOUT_DECREMENT_MILLIS).build()).addAction(Action.CANCEL.action(this).build()).build()
         createNotificationChannel()
         notificationManager()?.notify(R.id.notification_id, notification)
     }

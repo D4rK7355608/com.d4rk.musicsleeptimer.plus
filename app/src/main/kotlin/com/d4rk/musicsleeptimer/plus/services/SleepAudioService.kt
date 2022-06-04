@@ -13,12 +13,14 @@ import android.media.AudioManager.AUDIOFOCUS_GAIN
 import android.media.AudioManager.STREAM_MUSIC
 import com.d4rk.musicsleeptimer.plus.services.SleepTileService.Companion.requestTileUpdate
 import java.util.concurrent.TimeUnit.SECONDS
+@Suppress("DEPRECATION")
 class SleepAudioService : android.app.IntentService("SleepAudioService") {
     companion object {
         private val FADE_STEP_MILLIS = SECONDS.toMillis(1)
         private fun intent(context: Context) = Intent(context, SleepAudioService::class.java)
         fun pendingIntent(context: Context): PendingIntent? = PendingIntent.getService(context, 0, intent(context), FLAG_IMMUTABLE)
     }
+    @Deprecated("Deprecated in Java")
     override fun onHandleIntent(intent: Intent?) = getSystemService(AudioManager::class.java)?.run {
         val volumeIndex = getStreamVolume(STREAM_MUSIC)
         do {
