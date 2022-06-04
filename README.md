@@ -4,7 +4,7 @@
 
 ![Works with Android](https://img.shields.io/badge/Made%20for-Android-lime?style=for-the-badge&logo=android)
 ![GitHub Downloads](https://img.shields.io/github/downloads/D4rK7355608/com.d4rk.musicsleeptimer.plus/total?color=green&style=for-the-badge&logo=github)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/D4rK73550608/com.d4rk.musicsleeptimer.plus/android?style=for-the-badge&logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/D4rK73550608/com.d4rk.musicsleeptimer.plus/android.yml?style=for-the-badge&logo=github)
 ![GitHub Issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub License](https://img.shields.io/github/license/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
