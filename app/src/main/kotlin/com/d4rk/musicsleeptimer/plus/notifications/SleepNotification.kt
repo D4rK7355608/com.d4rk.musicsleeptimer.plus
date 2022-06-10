@@ -24,13 +24,13 @@ object SleepNotification {
     private val TIMEOUT_INCREMENT_MILLIS = MINUTES.toMillis(10)
     private val TIMEOUT_DECREMENT_MILLIS = MINUTES.toMillis(10)
     private enum class Action(private val value: String) {
-        CANCEL("com.d4rk.musicsleeptimer.action.CANCEL") {
+        CANCEL("com.d4rk.musicsleeptimer.plus.action.CANCEL") {
             override fun title(context: Context) = context.getText(R.string.notification_action_cancel)
         },
-        INCREMENT("com.d4rk.musicsleeptimer.action.INCREMENT") {
+        INCREMENT("com.d4rk.musicsleeptimer.plus.action.INCREMENT") {
             override fun title(context: Context) = context.getString(R.string.notification_action_increment, MILLISECONDS.toMinutes(TIMEOUT_INCREMENT_MILLIS))
         },
-        DECREMENT("com.d4rk.musicsleeptimer.action.DECREMENT") {
+        DECREMENT("com.d4rk.musicsleeptimer.plus.action.DECREMENT") {
             override fun title(context: Context) = context.getString(R.string.notification_action_decrement, MILLISECONDS.toMinutes(TIMEOUT_DECREMENT_MILLIS))
         },;
         companion object {

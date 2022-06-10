@@ -1,7 +1,4 @@
 <resources>
-    <item name="notification_id" type="id"/>
-    <color name="ic_launcher_background">@android:color/white</color>
-    <color name="ic_launcher_background_dark">#2D2D2D</color>
     <string name="app_name">Music Sleep Timer</string>
     <string name="tile_subtitle">Tap to start</string>
     <string name="app_description">Set your music to stop after you fall asleep.</string>
