@@ -27,7 +27,7 @@ Prevent your battery from draining! 📱
 At the end of the timer, the music is stopped to prevent your phone from playing music all night and draining the battery. 🔋
 
 Works with ALL media players! 📱
-Works with Spotify, Youtube or any other media player that you love. Simply start the music from your favorite music app, and set the timer. 🎶
+Works with Spotify, YouTube or any other media player that you love. Simply start the music from your favorite music app, and set the timer. 🎶
 
 Control it from the Notification Center! 📱
 Want to listen a little bit longer? ⏲️With Music Sleep Timer you can easily extend your timer directly from the Notification Center. 🔉
@@ -43,7 +43,7 @@ Bugs can be reported here.
 > Only use the GitHub Issues section if you discovered issues with the code itself. Do not mistake the Issues page as a help desk.
 > For support, informations and requests, please contact <d4rk7355608@gmail.com>.
 
-- Create an android/general issue/service/notification/bug.
+- Create an service/notification/general bug.  🐞
 
 __D4rK Music Sleep Timer is 100% free, open source inspired by SleepTimer by SimonMarquis, ad free, and pause everything it claims to!__
 
