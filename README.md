@@ -9,13 +9,13 @@
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub License](https://img.shields.io/github/license/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 
-## D4rK Music Sleep Timer Plus
+##  🎶 D4rK Music Sleep Timer Plus 🎶
 
 - ╔╦╦╦═╦╗╔═╦═╦══╦═╗
 - ║║║║╩╣╚╣═╣║║║║║╩╣
 - ╚══╩═╩═╩═╩═╩╩╩╩═╝
 
-## Set your music to stop after you fall asleep.
+## Set your music to stop after you fall asleep. 💤
 
 Just a simple app to stop your music or podcasts after you fall asleep. When the timer stops, audio playback is gradually lowered then paused. 😴
 
@@ -36,30 +36,30 @@ There are some great alternatives out there, but they all have the same major fl
 
 Designed with simplicity in mind to make sure it’s simple to use.
 
-Bugs can be reported here.
+## ⚠ Opening Issues ⚠
 
-## Opening Issues :warning:
+Bugs can be reported [here](https://github.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/issues).
 
 > Only use the GitHub Issues section if you discovered issues with the code itself. Do not mistake the Issues page as a help desk.
 > For support, informations and requests, please contact <d4rk7355608@gmail.com>.
 
 - Create an service/notification/general bug.  🐞
 
-__D4rK Music Sleep Timer is 100% free, open source inspired by SleepTimer by SimonMarquis, ad free, and pause everything it claims to!__
+__🖤 D4rK Music Sleep Timer is 100% free, open source inspired by SleepTimer by SimonMarquis, ad free, and pause everything it claims to! 🖤__
 
-## 💿 Features!
+## 🛠️ Features!
 - ⭐️ Set Timer to a certain time, or by duration.
 - ⭐️ Shortcut to extend timer right in the notification drawer.
+- ⭐️ No bloat/unnecessary features.
 - ⭐️ Simple and easy to use.
 - ⭐️ Fast and lightweight.
-- ⭐️ No bloat/unnecessary features.
-- ⭐️ Free!
+- ⭐️ Free Open source & secure.
 
-__❗️Note❗️__ Don't look for a launcher icon, this app only provides a Quick Settings Tile.
+__❗Note❗__  Don't look for a launcher icon, this app only provides a Quick Settings Tile.
 
-## Changelog [here](https://raw.githubusercontent.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/master/CHANGELOG.md)!
+## 📝 Changelog [here](https://raw.githubusercontent.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/master/CHANGELOG.md)!
 
-## Screenshots:
+## 🖼️ App preview:
 
 <img src="/app/src/main/play/listings/en-US/graphics/phone-screenshots/5-screenshot_all.png">
 

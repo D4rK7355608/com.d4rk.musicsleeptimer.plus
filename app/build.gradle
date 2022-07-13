@@ -10,8 +10,8 @@ android {
         applicationId "com.d4rk.musicsleeptimer.plus"
         minSdk 26
         targetSdk 32
-        versionCode 8
-        versionName "1.0_r4"
+        versionCode 10
+        versionName "1.0_r5"
         archivesBaseName = "com.d4rk.musicsleeptimer.plus-v${versionName}"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
