@@ -1,3 +1,7 @@
+# Version 1.0_r6:
+- Changes to policy;
+- Under the hood improvements.
+
 # Version 1.0_r5:
 - Under the hood improvements.
 

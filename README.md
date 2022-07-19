@@ -108,7 +108,7 @@ Rate us 5 stars ⭐⭐⭐⭐⭐ if you are happy with the app.
 alt="Get it on Google Play"
 height="90">](https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer.plus)
 
-__Privacy Policy__ [here](https://sites.google.com/view/d4rk7355608/more/apps/music-sleep-timer/privacy-policy).
-__Terms of Service__ [here](https://sites.google.com/view/d4rk7355608/more/apps/music-sleep-timer/terms-of-service).
+__Privacy Policy__ [here](https://sites.google.com/view/d4rk7355608/more/apps/privacy-policy).
+__Terms of Service__ [here](https://sites.google.com/view/d4rk7355608/more/apps/terms-of-service).
 
 ![license](https://imgur.com/QQlcEVT.png)
