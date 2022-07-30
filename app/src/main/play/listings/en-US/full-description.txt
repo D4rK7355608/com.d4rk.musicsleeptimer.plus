@@ -25,8 +25,6 @@ There are some great alternatives out there, but they all have the same major fl
 
 Designed with simplicity in mind to make sure it’s simple to use.
 
-❗Note❗ : Don't look for a launcher icon, this app only provides a Quick Settings Tile.
-
 ⚠ Opening Issues⚠
 
 Bugs can be reported here: https://github.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/issues
@@ -46,6 +44,8 @@ GitHub: https://github.com/D4rK7355608/com.d4rk.musicsleeptimer.plus
 ⭐️ Simple and easy to use.
 ⭐️ Fast and lightweight.
 ⭐️ Free Open source & secure.
+
+❗Note❗ : Don't look for a launcher icon, this app only provides a Quick Settings Tile.
 
 👨‍💻 More about me:
 ● Google Developers - https://developers.google.com/profile/u/D4rK7355608
