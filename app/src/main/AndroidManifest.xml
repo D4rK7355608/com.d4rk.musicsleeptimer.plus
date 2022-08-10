@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.d4rk.musicsleeptimer.plus">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:allowBackup="false"
-        android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"
         android:logo="@drawable/ic_launcher_foreground"
@@ -14,9 +11,7 @@
         android:appCategory="audio"
         android:supportsRtl="true"
         android:description="@string/app_description"
-        android:theme="@android:style/Theme.DeviceDefault"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        tools:ignore="UnusedAttribute">
+        android:theme="@android:style/Theme.DeviceDefault">
         <service
             android:name=".services.SleepTileService"
             android:icon="@drawable/ic_music_off"

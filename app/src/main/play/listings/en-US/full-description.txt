@@ -35,7 +35,7 @@ Create an service/notification/general bug. 🐞
 
 GitHub: https://github.com/D4rK7355608/com.d4rk.musicsleeptimer.plus
 
-🖤 D4rK Music Sleep Timer Plus is 100% free, open source, inspired by SleepTimer by SimonMarquis, ad free, and pause everything it claims to! 🖤
+🖤 D4rK Music Sleep Timer is 100% Free, Open Source, inspired by SleepTimer by SimonMarquis and pause everything it claims to! 🖤
 
 🛠️ Features!
 ⭐️ Set Timer to a certain time, or by duration.

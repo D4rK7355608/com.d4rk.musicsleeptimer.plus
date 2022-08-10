@@ -1,3 +1,6 @@
+# Version 1.0_r8:
+- Under the hood improvements.
+
 # Version 1.0_r7:
 - Under the hood improvements.
 

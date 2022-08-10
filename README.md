@@ -45,7 +45,7 @@ Bugs can be reported [here](https://github.com/D4rK7355608/com.d4rk.musicsleepti
 
 - Create an service/notification/general bug.  🐞
 
-__🖤 D4rK Music Sleep Timer is 100% free, open source inspired by SleepTimer by SimonMarquis, ad free, and pause everything it claims to! 🖤__
+__🖤 D4rK Music Sleep Timer is 100% Free, Open Source, inspired by SleepTimer by SimonMarquis and pause everything it claims to! 🖤__
 
 ## 🛠️ Features!
 - ⭐️ Set Timer to a certain time, or by duration.
@@ -104,9 +104,7 @@ Rate us 5 stars ⭐⭐⭐⭐⭐ if you are happy with the app.
 <a href="https://www.youtube.com/c/D4rK7355608/"><img src="https://img.shields.io/youtube/channel/subscribers/UCLDi-rmSRry0pNL-oVvGJAw?color=darkred&label=D4rK&logo=youtube&logoColor=darkred&style=for-the-badge"/></a>
 <a href="https://github.com/D4rK7355608/"><img src="https://img.shields.io/github/followers/D4rK7355608?color=white&logo=GitHub&style=for-the-badge"/></a>
 
-[<img src="https://raw.githubusercontent.com/steverichey/google-play-badge-svg/master/img/en_get.svg"
-alt="Get it on Google Play"
-height="90">](https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer.plus)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="90">](https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer.plus)
 
 __Privacy Policy__ [here](https://sites.google.com/view/d4rk7355608/more/apps/privacy-policy).
 __Terms of Service__ [here](https://sites.google.com/view/d4rk7355608/more/apps/terms-of-service).
