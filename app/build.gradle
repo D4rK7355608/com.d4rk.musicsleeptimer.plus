@@ -5,13 +5,13 @@ plugins {
     id 'com.google.firebase.crashlytics'
 }
 android {
-    compileSdk 32
+    compileSdk 33
     defaultConfig {
         applicationId "com.d4rk.musicsleeptimer.plus"
         minSdk 26
-        targetSdk 32
-        versionCode 13
-        versionName "1.0_r8"
+        targetSdk 33
+        versionCode 14
+        versionName "1.0_r9"
         archivesBaseName = "com.d4rk.musicsleeptimer.plus-v${versionName}"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,15 +20,12 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            resValue "bool", "FIREBASE_CRASH_ENABLED", "true"
-            resValue "bool", "FIREBASE_ANALYTICS_DEACTIVATED", "false"
         }
         debug {
             minifyEnabled true
             shrinkResources true
+            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            resValue "bool", "FIREBASE_CRASH_ENABLED", "false"
-            resValue "bool", "FIREBASE_ANALYTICS_DEACTIVATED", "true"
         }
     }
     compileOptions {
@@ -40,7 +37,6 @@ android {
     }
 }
 dependencies {
-    implementation platform('com.google.firebase:firebase-bom:30.3.1')
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.12'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.1.0'
     implementation 'com.google.firebase:firebase-perf:20.1.0'

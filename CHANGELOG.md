@@ -1,3 +1,7 @@
+# Version 1.0_r9:
+- Fixed crashes;
+- Under the hood improvements.
+
 # Version 1.0_r8:
 - Under the hood improvements.
 
