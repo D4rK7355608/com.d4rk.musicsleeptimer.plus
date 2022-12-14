@@ -1,0 +1,4 @@
+<resources>
+    <string name="tile_subtitle">Appuyez pour commencer</string>
+    <string name="app_description">Réglez votre musique pour qu\'elle s\'arrête après vous être endormi.</string>
+</resources>

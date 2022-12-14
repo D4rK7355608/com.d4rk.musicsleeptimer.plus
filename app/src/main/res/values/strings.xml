@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Music Sleep Timer</string>
+    <string name="app_description">Set your music to stop after you fall asleep.</string>
+    <string name="tile_subtitle">Tap to start</string>
+    <string name="notification_channel_id" translatable="false">sleep_timer</string>
+    <string name="notification_action_increment" translatable="false">+%d</string>
+    <string name="notification_action_decrement" translatable="false">-%d</string>
+</resources>

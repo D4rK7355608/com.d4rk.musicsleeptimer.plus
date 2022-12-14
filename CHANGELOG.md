@@ -1,3 +1,20 @@
+# Version 2.0_r1:
+- Added Store Archive compatibility;
+- Added Romanian language support;
+- Added Russian language support;
+- Added Italian language support;
+- Added Indonesian language support;
+- Added Hindi language support;
+- Added Japanese language support;
+- Added French language support;
+- Added Turkish language support;
+- Added German language support;
+- Added Spanish language support;
+- Fixed crashes;
+- Fixed app doesn't start;
+- Fixed notification not appear on (Android 13+);
+- Under the hood improvements.
+
 # Version 1.0_r9:
 - Fixed crashes;
 - Under the hood improvements.
