@@ -44,7 +44,7 @@ Bugs can be reported [here](https://github.com/D4rK7355608/com.d4rk.musicsleepti
 
 ## 🖼️ App preview:
 
-<img src="/app/src/main/play/listings/en-US/graphics/phone-screenshots/1-screenshot_notification.png">
+<img src="/app/src/main/play/listings/en-US/graphics/phone-screenshots/1-screenshot_notification.png" width="400">
 
 <details>
   <summary>APIs</summary>
