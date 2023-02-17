@@ -4,40 +4,27 @@
 
 ![Works with Android](https://img.shields.io/badge/Made%20for-Android-lime?style=for-the-badge&logo=android)
 ![GitHub Downloads](https://img.shields.io/github/downloads/D4rK7355608/com.d4rk.musicsleeptimer.plus/total?color=green&style=for-the-badge&logo=github)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/D4rK7355608/com.d4rk.musicsleeptimer.plus/Android%20CI/master?style=for-the-badge&logo=github)
-![GitHub Issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/D4rK7355608/com.d4rk.musicsleeptimer.plus/android.yml?style=for-the-badge)![GitHub Issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 ![GitHub License](https://img.shields.io/github/license/D4rK7355608/com.d4rk.musicsleeptimer.plus?style=for-the-badge&logo=github)
 
 ##  🎶 D4rK Music Sleep Timer Plus 🎶
 
-- ╔╦╦╦═╦╗╔═╦═╦══╦═╗
-- ║║║║╩╣╚╣═╣║║║║║╩╣
-- ╚══╩═╩═╩═╩═╩╩╩╩═╝
+╔╦╦╦═╦╗╔═╦═╦══╦═╗ \
+║║║║╩╣╚╣═╣║║║║║╩╣ \
+╚══╩═╩═╩═╩═╩╩╩╩═╝
 
 ## Set your music to stop after you fall asleep. 💤
 
-Just a simple app to stop your music or podcasts after you fall asleep. When the timer stops, audio playback is gradually lowered then paused. 😴
+Are you tired of waking up in the middle of the night to find that your phone's battery has drained and your music is still playing? Music Sleep Timer Plus is here to solve that problem. Our app is designed to help you fall asleep to your favorite tunes, podcasts, and other audio content, without worrying about your phone battery lasting through the night.
 
-1. Add the Tile in the Quick Settings panel; ⚙️
-2. Tap the Tile to start a timer; 👆🏼
-3. Extend, reduce or cancel the timer with the notification actions. 💤
+With Music Sleep Timer Plus, it's easy to set a timer to turn off your audio playback at a specific time. All you need to do is tap the notification tile, select your desired time, and start the countdown. The timer will run in the background, and you can continue to use your phone or other apps as usual. When the timer ends, audio playback will be stopped automatically, ensuring that your phone is conserving energy and you can get a peaceful night's sleep.
 
-Prevent your battery from draining! 📱
-At the end of the timer, the music is stopped to prevent your phone from playing music all night and draining the battery. 🔋
+But Music Sleep Timer Plus is more than just a sleep timer. It's also a lightweight, efficient app that won't drain your phone's resources or slow it down. And because it's compatible with all media players, you can use it with Spotify, YouTube, and any other app you love.
 
-Works with ALL media players! 📱
-Works with Spotify, YouTube or any other media player that you love. Simply start the music from your favorite music app, and set the timer. 🎶
+So if you want an easy way to make sure your music or podcasts don't keep playing all night, give Music Sleep Timer Plus a try. Get a better night's sleep with our app.
 
-Control it from the Notification Center! 📱
-Want to listen a little bit longer? ⏲️With Music Sleep Timer you can easily extend your timer directly from the Notification Center. 🔉
-
-There are some great alternatives out there, but they all have the same major flaw. 👀You shouldn't have to search for an app and wait for it to open to manage your time tracking. With Music Sleep Timer, now you don't have to! 😃
-
-Designed with simplicity in mind to make sure it’s simple to use.
-
-## ⚠ Opening Issues ⚠
-
+## ⚠ Opening Issues!
 Bugs can be reported [here](https://github.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/issues).
 
 > Only use the GitHub Issues section if you discovered issues with the code itself. Do not mistake the Issues page as a help desk.
@@ -45,23 +32,19 @@ Bugs can be reported [here](https://github.com/D4rK7355608/com.d4rk.musicsleepti
 
 - Create an service/notification/general bug.  🐞
 
-__🖤 D4rK Music Sleep Timer is 100% Free, Open Source, inspired by SleepTimer by SimonMarquis and pause everything it claims to! 🖤__
-
 ## 🛠️ Features!
-- ⭐️ Set Timer to a certain time, or by duration.
-- ⭐️ Shortcut to extend timer right in the notification drawer.
-- ⭐️ No bloat/unnecessary features.
-- ⭐️ Simple and easy to use.
-- ⭐️ Fast and lightweight.
-- ⭐️ Free Open source & secure.
-
-__❗Note❗__  Don't look for a launcher icon, this app only provides a Quick Settings Tile.
+⭐️ Set Timer to a certain time, or by duration. \
+⭐️ Shortcut to extend timer right in the notification drawer. \
+⭐️ No bloat/unnecessary features. \
+⭐️ Simple and easy to use. \
+⭐️ Fast and lightweight. \
+⭐️ Free Open source & secure.
 
 ## 📝 Changelog [here](https://raw.githubusercontent.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/master/CHANGELOG.md)!
 
 ## 🖼️ App preview:
 
-<img src="/app/src/main/play/listings/en-US/graphics/phone-screenshots/5-screenshot_all.png">
+<img src="/app/src/main/play/listings/en-US/graphics/phone-screenshots/1-screenshot_notification.png">
 
 <details>
   <summary>APIs</summary>
@@ -84,13 +67,15 @@ __❗Note❗__  Don't look for a launcher icon, this app only provides a Quick S
 </details>
 
 ## 🛑 Disclaimer!
-- Music Sleep Timer is a third party application to help the user to stop music players, video players, and Spotify easily with some extra options. Every music and video player belong to their respective owners.
-- By using Music Sleep Timer you won't search on how to turn off music automatically on Android or How do I set a sleep timer on my Android? Because our app do the job for you.
+- Don't look for a launcher icon, this app only provides a Quick Settings Tile.
+- Only use the GitHub Issues section if you discover issues with the code itself. Do not mistake the Issues page as a help desk. For support, information and requests, please contact d4rk7355608@gmail.com.
+- Music Sleep Timer Plus is a third party application to help the user to stop music players, video players, and Spotify easily with some extra options. Every music and video player belong to their respective owners.
+- By using Music Sleep Timer Plus you won't search on how to turn off music automatically on Android or How do I set a sleep timer on my Android? Because our app does the job for you.
 
 ## 💬 Feedback!
-If you have any suggested features or improvement, please leave a comment. In case something is not working correctly please let me know. When posting low rating please describe what is wrong to give the possibility to fix that issue.
+We are constantly updating and improving Music Sleep Timer Plus to give you the best possible experience. If you have any suggested features or improvements, please leave a review. In case something is not working correctly please let me know. When posting a low rating please describe what is wrong to give the possibility to fix that issue.
 
-Rate us 5 stars ⭐⭐⭐⭐⭐ if you are happy with the app.
+Thank you for choosing Music Sleep Timer Plus. We hope you enjoy using our app as much as we enjoyed creating it for you! Rate us 5 stars ⭐⭐⭐⭐⭐ if you are happy with the app! ❤
 
 ## 👨🏻‍💻 &nbsp;More About Me:
 <a href="mailto:d4rk7355608@gmail.com"><img src="https://img.shields.io/badge/d4rk7355608@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white"/></a>

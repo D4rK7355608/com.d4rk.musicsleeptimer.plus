@@ -1,3 +1,7 @@
+# Version 2.1_r1:
+- Added support for Swedish, Hungarian, Bulgarian, Polish and Ukrainian languages.
+- Made various under-the-hood improvements for a better overall app experience.
+
 # Version 2.0_r1:
 - Added Store Archive compatibility;
 - Added Romanian language support;
