@@ -27,9 +27,6 @@ So if you want an easy way to make sure your music or podcasts don't keep playin
 ## ⚠ Opening Issues!
 Bugs can be reported [here](https://github.com/D4rK7355608/com.d4rk.musicsleeptimer.plus/issues).
 
-> Only use the GitHub Issues section if you discovered issues with the code itself. Do not mistake the Issues page as a help desk.
-> For support, informations and requests, please contact <d4rk7355608@gmail.com>.
-
 - Create an service/notification/general bug.  🐞
 
 ## 🛠️ Features!
