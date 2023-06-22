@@ -1,3 +1,6 @@
+# Version 2.4_r1:
+- Made various under-the-hood improvements for a better overall app experience.
+
 # Version 2.3_r2:
 - Made minor under-the-hood improvements for a better overall app experience.
 

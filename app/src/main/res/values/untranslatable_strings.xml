@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Music Sleep Timer</string>
+    <string name="notification_action_increment" translatable="false">+%d</string>
+    <string name="notification_action_decrement" translatable="false">-%d</string>
+</resources>
