@@ -11,8 +11,8 @@ android {
         applicationId 'com.d4rk.musicsleeptimer.plus'
         minSdk 26
         targetSdk 33
-        versionCode 23
-        versionName '2.4_r1'
+        versionCode 24
+        versionName '2.5_r1'
         archivesBaseName = "${applicationId}-v${versionName}"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         resourceConfigurations += ['bg', 'de', 'en', 'es', 'fr', 'hi', 'hu', 'in', 'it', 'ja', 'pl', 'ro', 'ru', 'sv', 'tr', 'uk']
@@ -47,9 +47,9 @@ android {
     }
 }
 dependencies {
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.4.0'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.3.0'
-    implementation 'com.google.firebase:firebase-perf:20.3.3'
+    implementation 'com.google.firebase:firebase-perf:20.4.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.multidex:multidex:2.0.1'
     testImplementation 'junit:junit:4.13.2'
