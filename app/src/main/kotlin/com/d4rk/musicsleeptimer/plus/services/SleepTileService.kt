@@ -44,6 +44,7 @@ class SleepTileService : TileService() {
         }
         updateTile()
     } ?: Unit
+    @Suppress("DEPRECATION")
     private fun requestNotificationsPermission() = Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
         addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         putExtra(Settings.EXTRA_APP_PACKAGE, packageName)

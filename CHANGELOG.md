@@ -1,3 +1,7 @@
+# Version 2.6_r1:
+- Made various project structure enhancements for better readability and maintainability.
+- Made various under-the-hood improvements for a better overall app experience.
+
 # Version 2.5_r1:
 - Made various under-the-hood improvements for a better overall app experience.
 

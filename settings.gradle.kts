@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Music Sleep Timer Plus"
-include ':app'
+include(":app")
