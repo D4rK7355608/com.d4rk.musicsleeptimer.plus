@@ -1,6 +1,27 @@
-<p align="center">
-<img src="/app/src/main/play/listings/en-US/graphics/ic_launcher-playstore.png" width="300">
-</p>
+![Now in Android](docs/images/nia-splash.jpg "Music Sleep Timer Plus")
+
+<a href="https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer.plus"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="70"></a>
+
+Music Sleep Timer Plus App
+==================
+
+**Set your music to stop after you fall asleep effortlessly.**
+
+Drift off to tranquility with Music Sleep Timer Plus, your personal companion for a peaceful night's rest. Our app seamlessly blends into your existing audio experience, ensuring that your favorite tunes, podcasts, or other content gently fade away as you slumber.
+
+Say goodbye to battery-draining music playback that disrupts your sleep. Music Sleep Timer Plus puts you in control, allowing you to set a convenient timer to automatically turn off your audio at a specified time. Simply tap the notification tile, select your desired duration, and let the app work its magic.
+
+Lightweight and Efficient, Compatible with Your Favorite Apps
+
+Unlike other sleep timer apps that burden your device, Music Sleep Timer Plus is a lightweight and efficient addition to your Android smartphone. It seamlessly integrates with your existing media players, ensuring compatibility with Spotify, YouTube, and any other app you prefer.
+
+# Features
+
+**Music Sleep Timer Plus** can be extend the timer directly from the notification drawer and the user can set timers by specific time or duration.
+
+# Screenshots
+
+
 
 ![Works with Android](https://img.shields.io/badge/Made%20for-Android-lime?style=for-the-badge&logo=android)
 ![GitHub Downloads](https://img.shields.io/github/downloads/D4rK7355608/com.d4rk.musicsleeptimer.plus/total?color=green&style=for-the-badge&logo=github)
