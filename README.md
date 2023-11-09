@@ -1,4 +1,4 @@
-![Now in Android](docs/images/nia-splash.jpg "Music Sleep Timer Plus")
+![Now in Android](docs/images/nia-splash.png "Music Sleep Timer Plus")
 
 <a href="https://play.google.com/store/apps/details?id=com.d4rk.musicsleeptimer.plus"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="70"></a>
 
