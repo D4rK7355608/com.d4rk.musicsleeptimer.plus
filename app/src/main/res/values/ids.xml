@@ -1,4 +1,4 @@
 <resources>
-    <item name="notification_id" type="id"/>
+    <item name="notification_id" type="id" />
     <string name="notification_channel_id" translatable="false">sleep_timer</string>
 </resources>

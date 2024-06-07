@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -12,11 +13,28 @@ android {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 26
         targetSdk = 34
-        versionCode = 26
-        versionName = "1.0.0"
+        versionCode = 27
+        versionName = "3.0.0"
         archivesName = "${applicationId}-v${versionName}"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        resourceConfigurations += listOf("en", "de", "es", "fr", "hi", "hu", "in", "it", "ja", "ro", "ru", "tr", "sv", "bg", "pl", "uk")
+        resourceConfigurations += listOf(
+            "en" ,
+            "de" ,
+            "es" ,
+            "fr" ,
+            "hi" ,
+            "hu" ,
+            "in" ,
+            "it" ,
+            "ja" ,
+            "ro" ,
+            "ru" ,
+            "tr" ,
+            "sv" ,
+            "bg" ,
+            "pl" ,
+            "uk"
+        )
     }
     buildTypes {
         release {
@@ -24,14 +42,18 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             isDebuggable = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt") , "proguard-rules.pro"
+            )
         }
         debug {
             multiDexEnabled = true
             isMinifyEnabled = true
             isShrinkResources = true
             isDebuggable = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt") , "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -52,12 +74,14 @@ android {
     }
 }
 dependencies {
-    implementation("com.google.firebase:firebase-crashlytics-ktx:18.5.1")
-    implementation("com.google.firebase:firebase-analytics-ktx:21.5.0")
-    implementation("com.google.firebase:firebase-perf:20.5.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.multidex:multidex:2.0.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.crashlytics.ktx)
+    implementation(libs.firebase.analytics.ktx)
+    implementation(libs.firebase.perf)
+    implementation(libs.appcompat)
+    implementation(libs.work.runtime.ktx)
+    implementation(libs.multidex)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
 }

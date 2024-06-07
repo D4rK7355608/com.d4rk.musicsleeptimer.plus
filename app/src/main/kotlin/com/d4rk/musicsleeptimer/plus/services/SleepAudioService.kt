@@ -1,4 +1,5 @@
 package com.d4rk.musicsleeptimer.plus.services
+
 import android.app.PendingIntent
 import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.content.Context
@@ -13,27 +14,34 @@ import android.media.AudioManager.AUDIOFOCUS_GAIN
 import android.media.AudioManager.STREAM_MUSIC
 import com.d4rk.musicsleeptimer.plus.services.SleepTileService.Companion.requestTileUpdate
 import java.util.concurrent.TimeUnit.SECONDS
+
 @Suppress("DEPRECATION")
 class SleepAudioService : android.app.IntentService("SleepAudioService") {
     companion object {
         private val FADE_STEP_MILLIS = SECONDS.toMillis(1)
         private val RESTORE_VOLUME_MILLIS = SECONDS.toMillis(2)
-        private fun intent(context: Context) = Intent(context, SleepAudioService::class.java)
-        fun pendingIntent(context: Context): PendingIntent? = PendingIntent.getService(context, 0, intent(context), FLAG_IMMUTABLE)
+        private fun intent(context : Context) = Intent(context , SleepAudioService::class.java)
+        fun pendingIntent(context : Context) : PendingIntent? =
+                PendingIntent.getService(context , 0 , intent(context) , FLAG_IMMUTABLE)
     }
+
     @Deprecated("Deprecated in Java")
-    override fun onHandleIntent(intent: Intent?) = getSystemService(AudioManager::class.java)?.run {
-        val volumeIndex = getStreamVolume(STREAM_MUSIC)
-        do {
-            adjustStreamVolume(STREAM_MUSIC, ADJUST_LOWER, 0)
-            Thread.sleep(FADE_STEP_MILLIS)
-        } while (getStreamVolume(STREAM_MUSIC) > 0)
-        val attributes = AudioAttributes.Builder().setUsage(USAGE_MEDIA).setContentType(CONTENT_TYPE_MUSIC).build()
-        val focusRequest = AudioFocusRequest.Builder(AUDIOFOCUS_GAIN).setAudioAttributes(attributes).setOnAudioFocusChangeListener {}.build()
-        requestAudioFocus(focusRequest)
-        Thread.sleep(RESTORE_VOLUME_MILLIS)
-        setStreamVolume(STREAM_MUSIC, volumeIndex, 0)
-        abandonAudioFocusRequest(focusRequest)
-        requestTileUpdate()
-    } ?: Unit
+    override fun onHandleIntent(intent : Intent?) =
+            getSystemService(AudioManager::class.java)?.run {
+                val volumeIndex = getStreamVolume(STREAM_MUSIC)
+                do {
+                    adjustStreamVolume(STREAM_MUSIC , ADJUST_LOWER , 0)
+                    Thread.sleep(FADE_STEP_MILLIS)
+                } while (getStreamVolume(STREAM_MUSIC) > 0)
+                val attributes = AudioAttributes.Builder().setUsage(USAGE_MEDIA)
+                        .setContentType(CONTENT_TYPE_MUSIC).build()
+                val focusRequest =
+                        AudioFocusRequest.Builder(AUDIOFOCUS_GAIN).setAudioAttributes(attributes)
+                                .setOnAudioFocusChangeListener {}.build()
+                requestAudioFocus(focusRequest)
+                Thread.sleep(RESTORE_VOLUME_MILLIS)
+                setStreamVolume(STREAM_MUSIC , volumeIndex , 0)
+                abandonAudioFocusRequest(focusRequest)
+                requestTileUpdate()
+            } ?: Unit
 }
