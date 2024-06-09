@@ -7,17 +7,25 @@ Music Sleep Timer Plus App
 
 **Set your music to stop after you fall asleep effortlessly.**
 
-Drift off to tranquility with Music Sleep Timer Plus, your personal companion for a peaceful night's rest. Our app seamlessly blends into your existing audio experience, ensuring that your favorite tunes, podcasts, or other content gently fade away as you slumber.
+Drift off to tranquility with Music Sleep Timer Plus, your personal companion for a peaceful night's
+rest. Our app seamlessly blends into your existing audio experience, ensuring that your favorite
+tunes, podcasts, or other content gently fade away as you slumber.
 
-Say goodbye to battery-draining music playback that disrupts your sleep. Music Sleep Timer Plus puts you in control, allowing you to set a convenient timer to automatically turn off your audio at a specified time. Simply tap the notification tile, select your desired duration, and let the app work its magic.
+Say goodbye to battery-draining music playback that disrupts your sleep. Music Sleep Timer Plus puts
+you in control, allowing you to set a convenient timer to automatically turn off your audio at a
+specified time. Simply tap the notification tile, select your desired duration, and let the app work
+its magic.
 
 Lightweight and Efficient, Compatible with Your Favorite Apps
 
-Unlike other sleep timer apps that burden your device, Music Sleep Timer Plus is a lightweight and efficient addition to your Android smartphone. It seamlessly integrates with your existing media players, ensuring compatibility with Spotify, YouTube, and any other app you prefer.
+Unlike other sleep timer apps that burden your device, Music Sleep Timer Plus is a lightweight and
+efficient addition to your Android smartphone. It seamlessly integrates with your existing media
+players, ensuring compatibility with Spotify, YouTube, and any other app you prefer.
 
 # Features
 
-**Music Sleep Timer Plus** can be extend the timer directly from the notification drawer and the user can set timers by specific time or duration.
+**Music Sleep Timer Plus** can be extend the timer directly from the notification drawer and the
+user can set timers by specific time or duration.
 
 # Screenshots
 

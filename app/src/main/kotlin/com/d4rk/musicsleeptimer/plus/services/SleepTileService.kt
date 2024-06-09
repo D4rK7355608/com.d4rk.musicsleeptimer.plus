@@ -10,9 +10,9 @@ import android.service.quicksettings.Tile.STATE_ACTIVE
 import android.service.quicksettings.Tile.STATE_INACTIVE
 import android.service.quicksettings.TileService
 import com.d4rk.musicsleeptimer.plus.R
-import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.notificationManager
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.find
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.handle
+import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.notificationManager
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.toggle
 import java.text.DateFormat.SHORT
 import java.text.DateFormat.getTimeInstance

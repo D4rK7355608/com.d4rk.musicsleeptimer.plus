@@ -3,9 +3,6 @@ package com.d4rk.musicsleeptimer.plus.notifications
 import android.app.Notification
 import android.app.Notification.CATEGORY_EVENT
 import android.app.Notification.VISIBILITY_PUBLIC
-import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.CANCEL
-import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.DECREMENT
-import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.INCREMENT
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.NotificationManager.IMPORTANCE_LOW
@@ -15,6 +12,9 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Icon
 import com.d4rk.musicsleeptimer.plus.R
+import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.CANCEL
+import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.DECREMENT
+import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.INCREMENT
 import com.d4rk.musicsleeptimer.plus.services.SleepAudioService
 import com.d4rk.musicsleeptimer.plus.services.SleepTileService
 import java.lang.System.currentTimeMillis
