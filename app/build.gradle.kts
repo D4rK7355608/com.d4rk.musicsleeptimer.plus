@@ -1,78 +1,85 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
-
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services")
-    id("com.google.firebase.crashlytics")
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.googlePlayServices)
+    alias(libs.plugins.googleFirebase)
 }
+
 android {
+
     compileSdk = 34
     namespace = "com.d4rk.musicsleeptimer.plus"
     defaultConfig {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 26
         targetSdk = 34
-        versionCode = 27
-        versionName = "3.0.0"
-        archivesName = "${applicationId}-v${versionName}"
+        versionCode = 28
+        versionName = "3.0.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resourceConfigurations += listOf(
-            "en" ,
-            "de" ,
-            "es" ,
-            "fr" ,
-            "hi" ,
-            "hu" ,
-            "in" ,
-            "it" ,
-            "ja" ,
-            "ro" ,
-            "ru" ,
-            "tr" ,
-            "sv" ,
-            "bg" ,
-            "pl" ,
+            "en",
+            "de",
+            "es",
+            "fr",
+            "hi",
+            "hu",
+            "in",
+            "it",
+            "ja",
+            "ro",
+            "ru",
+            "tr",
+            "sv",
+            "bg",
+            "pl",
             "uk"
         )
     }
+
     buildTypes {
         release {
             multiDexEnabled = true
             isMinifyEnabled = true
             isShrinkResources = true
             isDebuggable = false
+            versionNameSuffix = null
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt") , "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
         debug {
             multiDexEnabled = true
-            isMinifyEnabled = true
-            isShrinkResources = true
             isDebuggable = true
+            versionNameSuffix = null
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt") , "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
+
     buildFeatures {
         viewBinding = true
         buildConfig = true
     }
+
     bundle {
         storeArchive {
             enable = true
         }
     }
 }
+
 dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.crashlytics.ktx)
