@@ -6,7 +6,6 @@ plugins {
 }
 
 android {
-
     compileSdk = 34
     namespace = "com.d4rk.musicsleeptimer.plus"
     defaultConfig {
