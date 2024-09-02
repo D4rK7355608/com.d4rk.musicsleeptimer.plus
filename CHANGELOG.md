@@ -1,3 +1,20 @@
+# Version 3.0.2:
+
+- Modernized project structure
+- Upgraded the Android Gradle Plugin
+- Enhanced issue tracking with templates
+- Updated dependencies
+
+# Version 3.0.1:
+
+- Updated the Android Gradle Plugin
+
+# Version 3.0.0:
+
+- Updated all project props to match the other projects
+- Updated the README.md
+- Small code reformat
+
 # Version 2.6_r1:
 
 - Made various project structure enhancements for better readability and maintainability.

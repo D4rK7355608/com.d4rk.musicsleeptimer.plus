@@ -12,8 +12,8 @@ android {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 26
         targetSdk = 34
-        versionCode = 28
-        versionName = "3.0.1"
+        versionCode = 29
+        versionName = "3.0.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resourceConfigurations += listOf(
             "en",
@@ -31,7 +31,7 @@ android {
             "sv",
             "bg",
             "pl",
-            "uk"
+            "uk",
         )
     }
 
@@ -41,7 +41,6 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             isDebuggable = false
-            versionNameSuffix = null
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -50,7 +49,6 @@ android {
         debug {
             multiDexEnabled = true
             isDebuggable = true
-            versionNameSuffix = null
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -68,7 +66,6 @@ android {
     }
 
     buildFeatures {
-        viewBinding = true
         buildConfig = true
     }
 
