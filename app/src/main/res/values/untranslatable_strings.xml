@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Music Sleep Timer</string>
     <string name="notification_action_increment" translatable="false">+%d</string>

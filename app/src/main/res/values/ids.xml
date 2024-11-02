@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="notification_id" type="id" />
     <string name="notification_channel_id" translatable="false">sleep_timer</string>

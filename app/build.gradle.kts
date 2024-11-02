@@ -6,51 +6,54 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
     namespace = "com.d4rk.musicsleeptimer.plus"
     defaultConfig {
         applicationId = "com.d4rk.musicsleeptimer.plus"
-        minSdk = 26
-        targetSdk = 34
-        versionCode = 29
-        versionName = "3.0.2"
+        minSdk = 23
+        targetSdk = 35
+        versionCode = 30
+        versionName = "3.0.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resourceConfigurations += listOf(
-            "en",
-            "de",
-            "es",
-            "fr",
-            "hi",
-            "hu",
-            "in",
-            "it",
-            "ja",
-            "ro",
-            "ru",
-            "tr",
-            "sv",
-            "bg",
-            "pl",
-            "uk",
+            "en" ,
+            "bg-rBG" ,
+            "de-rDE" ,
+            "es-rGQ" ,
+            "fr-rFR" ,
+            "hi-rIN" ,
+            "hu-rHU" ,
+            "in-rID" ,
+            "it-rIT" ,
+            "ja-rJP" ,
+            "pl-rPL" ,
+            "pt-rBR",
+            "ro-rRO" ,
+            "ru-rRU" ,
+            "sv-rSE" ,
+            "th-rTH" ,
+            "tr-rTR" ,
+            "uk-rUA" ,
+            "zh-rTW" ,
         )
     }
 
     buildTypes {
         release {
-            multiDexEnabled = true
             isMinifyEnabled = true
             isShrinkResources = true
             isDebuggable = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
         }
         debug {
-            multiDexEnabled = true
             isDebuggable = true
+        }
+    }
+
+    buildTypes.forEach { buildType ->
+        with(buildType) {
+            multiDexEnabled = true
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
+                getDefaultProguardFile(name = "proguard-android-optimize.txt") ,
                 "proguard-rules.pro"
             )
         }
@@ -77,14 +80,14 @@ android {
 }
 
 dependencies {
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.crashlytics.ktx)
-    implementation(libs.firebase.analytics.ktx)
-    implementation(libs.firebase.perf)
-    implementation(libs.appcompat)
-    implementation(libs.work.runtime.ktx)
-    implementation(libs.multidex)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    implementation(dependencyNotation = platform(libs.firebase.bom))
+    implementation(dependencyNotation = libs.firebase.crashlytics.ktx)
+    implementation(dependencyNotation = libs.firebase.analytics.ktx)
+    implementation(dependencyNotation = libs.firebase.perf)
+    implementation(dependencyNotation = libs.appcompat)
+    implementation(dependencyNotation = libs.work.runtime.ktx)
+    implementation(dependencyNotation = libs.multidex)
+    testImplementation(dependencyNotation = libs.junit)
+    androidTestImplementation(dependencyNotation = libs.ext.junit)
+    androidTestImplementation(dependencyNotation = libs.espresso.core)
 }

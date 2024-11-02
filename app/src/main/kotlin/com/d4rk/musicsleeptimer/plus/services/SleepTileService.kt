@@ -3,6 +3,7 @@ package com.d4rk.musicsleeptimer.plus.services
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import android.os.Build.VERSION_CODES.Q
 import android.provider.Settings
@@ -53,10 +54,17 @@ class SleepTileService : TileService() {
         updateTile()
     } ?: Unit
 
-    @Suppress("DEPRECATION")
     private fun requestNotificationsPermission() =
-            Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
-                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                putExtra(Settings.EXTRA_APP_PACKAGE , packageName)
-            }.let(::startActivityAndCollapse)
+            if (SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    putExtra(Settings.EXTRA_APP_PACKAGE , packageName)
+                }.let(::startActivity)
+            }
+            else {
+                @Suppress("DEPRECATION") Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    putExtra(Settings.EXTRA_APP_PACKAGE , packageName)
+                }.let(::startActivityAndCollapse)
+            }
 }

@@ -1,15 +1,15 @@
 [versions]
-agp = "8.6.0"
+agp = "8.7.2"
 appcompat = "1.7.0"
 espressoCore = "3.6.1"
-firebaseBom = "33.2.0"
+firebaseBom = "33.5.1"
 kotlin = "2.0.0"
 google-firebase-crashlytics = "3.0.2"
 google-services = "4.4.2"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 multidex = "2.0.1"
-workRuntimeKtx = "2.9.1"
+workRuntimeKtx = "2.10.0"
 
 [libraries]
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }

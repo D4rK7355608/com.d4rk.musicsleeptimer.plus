@@ -1,3 +1,8 @@
+# Version 3.0.3:
+
+- **New**: Added 3 new languages: Traditional Chinese, Thai, and Brazilian Portuguese.
+- **Misc**: Updated Android Gradle Plugin (AGP) and project dependencies to latest versions.
+
 # Version 3.0.2:
 
 - Modernized project structure
