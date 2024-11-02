@@ -10,6 +10,7 @@ import android.provider.Settings
 import android.service.quicksettings.Tile.STATE_ACTIVE
 import android.service.quicksettings.Tile.STATE_INACTIVE
 import android.service.quicksettings.TileService
+import androidx.annotation.RequiresApi
 import com.d4rk.musicsleeptimer.plus.R
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.find
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.handle
@@ -19,6 +20,7 @@ import java.text.DateFormat.SHORT
 import java.text.DateFormat.getTimeInstance
 import java.util.Date
 
+@RequiresApi(Build.VERSION_CODES.O)
 class SleepTileService : TileService() {
     companion object {
         fun Context.requestTileUpdate() =

@@ -11,6 +11,8 @@ import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Icon
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.d4rk.musicsleeptimer.plus.R
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.CANCEL
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.DECREMENT
@@ -24,6 +26,7 @@ import java.util.Date
 import java.util.concurrent.TimeUnit.MILLISECONDS
 import java.util.concurrent.TimeUnit.MINUTES
 
+@RequiresApi(Build.VERSION_CODES.O)
 object SleepNotification {
     private val TIMEOUT_INITIAL_MILLIS = MINUTES.toMillis(30)
     private val TIMEOUT_INCREMENT_MILLIS = MINUTES.toMillis(10)
@@ -44,7 +47,8 @@ object SleepNotification {
                 R.string.notification_action_decrement ,
                 MILLISECONDS.toMinutes(TIMEOUT_DECREMENT_MILLIS)
             )
-        } , ;
+        } ,
+        ;
 
         companion object {
             fun parse(value : String?) : Action? = entries.firstOrNull { it.value == value }

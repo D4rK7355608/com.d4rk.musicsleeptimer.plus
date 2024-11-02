@@ -12,10 +12,13 @@ import android.media.AudioManager
 import android.media.AudioManager.ADJUST_LOWER
 import android.media.AudioManager.AUDIOFOCUS_GAIN
 import android.media.AudioManager.STREAM_MUSIC
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.d4rk.musicsleeptimer.plus.services.SleepTileService.Companion.requestTileUpdate
 import java.util.concurrent.TimeUnit.SECONDS
 
 @Suppress("DEPRECATION")
+@RequiresApi(Build.VERSION_CODES.O)
 class SleepAudioService : android.app.IntentService("SleepAudioService") {
     companion object {
         private val FADE_STEP_MILLIS = SECONDS.toMillis(1)
