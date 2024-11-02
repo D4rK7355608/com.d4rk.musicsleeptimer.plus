@@ -37,7 +37,13 @@
                 android:value="true" />
         </service>
 
-        <service android:name=".services.SleepAudioService" />
+        <receiver
+            android:name=".receivers.SleepAudioReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.d4rk.musicsleeptimer.plus.action.SLEEP_AUDIO" />
+            </intent-filter>
+        </receiver>
 
         <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"

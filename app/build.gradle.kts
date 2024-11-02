@@ -12,7 +12,7 @@ android {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 23
         targetSdk = 35
-        versionCode = 30
+        versionCode = 31
         versionName = "3.0.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resourceConfigurations += listOf(

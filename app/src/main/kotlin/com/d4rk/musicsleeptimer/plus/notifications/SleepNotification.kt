@@ -17,7 +17,7 @@ import com.d4rk.musicsleeptimer.plus.R
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.CANCEL
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.DECREMENT
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.INCREMENT
-import com.d4rk.musicsleeptimer.plus.services.SleepAudioService
+import com.d4rk.musicsleeptimer.plus.workers.SleepAudioWorker
 import com.d4rk.musicsleeptimer.plus.services.SleepTileService
 import java.lang.System.currentTimeMillis
 import java.text.DateFormat
@@ -102,7 +102,8 @@ object SleepNotification {
                 .setOngoing(true).setSmallIcon(R.drawable.ic_music_off)
                 .setSubText(DateFormat.getTimeInstance(SHORT).format(Date(eta))).setShowWhen(true)
                 .setWhen(eta).setUsesChronometer(true).setChronometerCountDown(true)
-                .setTimeoutAfter(timeout).setDeleteIntent(SleepAudioService.pendingIntent(this))
+                .setTimeoutAfter(timeout)
+                .setDeleteIntent(SleepAudioWorker.pendingIntent(this)) // FIXME: Unresolved reference: pendingIntent
                 .addAction(INCREMENT.action(this).build()).addAction(
                     DECREMENT.action(this , cancel = timeout <= TIMEOUT_DECREMENT_MILLIS).build()
                 ).addAction(CANCEL.action(this).build()).build()
