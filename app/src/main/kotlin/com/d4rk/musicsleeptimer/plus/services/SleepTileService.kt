@@ -1,5 +1,6 @@
 package com.d4rk.musicsleeptimer.plus.services
 
+import android.app.Notification
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -41,7 +42,7 @@ class SleepTileService : TileService() {
     }
 
     private fun refreshTile() = qsTile?.run {
-        when (val notification = find()) {
+        when (val notification : Notification? = find()) {
             null -> {
                 state = STATE_INACTIVE
                 if (SDK_INT >= Q) subtitle = resources.getText(R.string.tile_subtitle)

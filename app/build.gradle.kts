@@ -1,8 +1,8 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.googlePlayServices)
-    alias(libs.plugins.googleFirebase)
+    alias(notation = libs.plugins.androidApplication)
+    alias(notation = libs.plugins.jetbrainsKotlinAndroid)
+    alias(notation = libs.plugins.googlePlayServices)
+    alias(notation = libs.plugins.googleFirebase)
 }
 
 android {
@@ -12,8 +12,8 @@ android {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 23
         targetSdk = 35
-        versionCode = 31
-        versionName = "3.0.3"
+        versionCode = 32
+        versionName = "3.0.4"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resourceConfigurations += listOf(
             "en" ,
@@ -87,7 +87,4 @@ dependencies {
     implementation(dependencyNotation = libs.appcompat)
     implementation(dependencyNotation = libs.work.runtime.ktx)
     implementation(dependencyNotation = libs.multidex)
-    testImplementation(dependencyNotation = libs.junit)
-    androidTestImplementation(dependencyNotation = libs.ext.junit)
-    androidTestImplementation(dependencyNotation = libs.espresso.core)
 }

@@ -28,9 +28,9 @@ import java.util.concurrent.TimeUnit.MINUTES
 
 @RequiresApi(Build.VERSION_CODES.O)
 object SleepNotification {
-    private val TIMEOUT_INITIAL_MILLIS = MINUTES.toMillis(30)
-    private val TIMEOUT_INCREMENT_MILLIS = MINUTES.toMillis(10)
-    private val TIMEOUT_DECREMENT_MILLIS = MINUTES.toMillis(10)
+    private val TIMEOUT_INITIAL_MILLIS : Long = MINUTES.toMillis(30)
+    private val TIMEOUT_INCREMENT_MILLIS : Long = MINUTES.toMillis(10)
+    private val TIMEOUT_DECREMENT_MILLIS : Long = MINUTES.toMillis(10)
 
     private enum class Action(private val value : String) {
         CANCEL("com.d4rk.musicsleeptimer.plus.action.CANCEL") {
@@ -96,8 +96,8 @@ object SleepNotification {
 
     private fun Context.show(timeout : Long = TIMEOUT_INITIAL_MILLIS) {
         require(timeout > 0)
-        val eta = currentTimeMillis() + timeout
-        val notification = Notification.Builder(this , getString(R.string.notification_channel_id))
+        val eta : Long = currentTimeMillis() + timeout
+        val notification : Notification = Notification.Builder(this , getString(R.string.notification_channel_id))
                 .setCategory(CATEGORY_EVENT).setVisibility(VISIBILITY_PUBLIC).setOnlyAlertOnce(true)
                 .setOngoing(true).setSmallIcon(R.drawable.ic_music_off)
                 .setSubText(DateFormat.getTimeInstance(SHORT).format(Date(eta))).setShowWhen(true)
@@ -112,9 +112,9 @@ object SleepNotification {
     }
 
     private fun Context.createNotificationChannel() {
-        val id = getString(R.string.notification_channel_id)
+        val id : String = getString(R.string.notification_channel_id)
         val name : CharSequence = getString(R.string.app_name)
-        val channel = NotificationChannel(id , name , IMPORTANCE_LOW).apply {
+        val channel : NotificationChannel = NotificationChannel(id , name , IMPORTANCE_LOW).apply {
             setBypassDnd(true)
             lockscreenVisibility = VISIBILITY_PUBLIC
         }

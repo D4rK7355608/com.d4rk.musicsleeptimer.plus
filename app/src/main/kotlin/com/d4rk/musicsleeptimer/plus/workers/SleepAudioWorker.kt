@@ -9,6 +9,7 @@ import android.media.AudioManager
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.work.ExistingWorkPolicy
+import androidx.work.OneTimeWorkRequest
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.Worker
@@ -23,13 +24,13 @@ class SleepAudioWorker(
 ) : Worker(context , workerParams) {
 
     companion object {
-        private val FADE_STEP_MILLIS = TimeUnit.SECONDS.toMillis(1)
-        private val RESTORE_VOLUME_MILLIS = TimeUnit.SECONDS.toMillis(2)
-        private const val UNIQUE_WORK_NAME = "sleep_audio_work"
-        const val ACTION_SLEEP_AUDIO = "com.d4rk.musicsleeptimer.plus.action.SLEEP_AUDIO"
+        private val FADE_STEP_MILLIS : Long = TimeUnit.SECONDS.toMillis(1)
+        private val RESTORE_VOLUME_MILLIS : Long = TimeUnit.SECONDS.toMillis(2)
+        private const val UNIQUE_WORK_NAME : String = "sleep_audio_work"
+        const val ACTION_SLEEP_AUDIO : String = "com.d4rk.musicsleeptimer.plus.action.SLEEP_AUDIO"
 
         fun pendingIntent(context : Context) : PendingIntent? {
-            val intent = Intent(context , SleepAudioReceiver::class.java).apply {
+            val intent : Intent = Intent(context , SleepAudioReceiver::class.java).apply {
                 action = ACTION_SLEEP_AUDIO
             }
             return PendingIntent.getBroadcast(
@@ -38,7 +39,7 @@ class SleepAudioWorker(
         }
 
         internal fun startWork(context : Context) {
-            val workRequest = OneTimeWorkRequestBuilder<SleepAudioWorker>().build()
+            val workRequest : OneTimeWorkRequest = OneTimeWorkRequestBuilder<SleepAudioWorker>().build()
 
             WorkManager.getInstance(context).enqueueUniqueWork(
                 UNIQUE_WORK_NAME , ExistingWorkPolicy.REPLACE , workRequest
@@ -46,35 +47,39 @@ class SleepAudioWorker(
         }
     }
 
-    override fun doWork() : Result {
-        return try {
+    override fun doWork(): Result {
+        return runCatching {
             applicationContext.getSystemService(AudioManager::class.java)?.run {
-                val volumeIndex = getStreamVolume(AudioManager.STREAM_MUSIC)
+                val volumeIndex: Int = getStreamVolume(AudioManager.STREAM_MUSIC)
 
                 do {
                     adjustStreamVolume(
-                        AudioManager.STREAM_MUSIC , AudioManager.ADJUST_LOWER , 0
+                        AudioManager.STREAM_MUSIC, AudioManager.ADJUST_LOWER, 0
                     )
                     Thread.sleep(FADE_STEP_MILLIS)
                 } while (getStreamVolume(AudioManager.STREAM_MUSIC) > 0)
 
-                val attributes = AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_MEDIA)
-                        .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build()
+                val attributes: AudioAttributes = AudioAttributes.Builder()
+                        .setUsage(AudioAttributes.USAGE_MEDIA)
+                        .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                        .build()
 
-                val focusRequest = AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN)
-                        .setAudioAttributes(attributes).setOnAudioFocusChangeListener {}.build()
+                val focusRequest: AudioFocusRequest = AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN)
+                        .setAudioAttributes(attributes)
+                        .setOnAudioFocusChangeListener {}
+                        .build()
 
                 requestAudioFocus(focusRequest)
 
                 Thread.sleep(RESTORE_VOLUME_MILLIS)
 
-                setStreamVolume(AudioManager.STREAM_MUSIC , volumeIndex , 0)
+                setStreamVolume(AudioManager.STREAM_MUSIC, volumeIndex, 0)
 
                 abandonAudioFocusRequest(focusRequest)
 
-                return@run Result.success()
+                Result.success()
             } ?: Result.failure()
-        } catch (e : Exception) {
+        }.getOrElse {
             Result.failure()
         }
     }

@@ -11,7 +11,7 @@ import com.d4rk.musicsleeptimer.plus.workers.SleepAudioWorker
 class SleepAudioReceiver : BroadcastReceiver() {
     override fun onReceive(context : Context , intent : Intent) {
         if (intent.action == SleepAudioWorker.ACTION_SLEEP_AUDIO) {
-            SleepAudioWorker.startWork(context)
+            SleepAudioWorker.startWork(context = context)
         }
     }
 }
