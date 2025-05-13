@@ -1,3 +1,7 @@
+# Version 3.0.4:
+
+- **Minor**: Under-the-hood improvements for a better overall app experience.
+
 # Version 3.0.3:
 
 - **New**: Added 3 new languages: Traditional Chinese, Thai, and Brazilian Portuguese.

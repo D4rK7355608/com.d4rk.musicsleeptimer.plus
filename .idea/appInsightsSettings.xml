@@ -23,9 +23,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.d4rk.musicsleeptimer.plus" />
-                  <option name="mobileSdkAppId" value="1:112794310224:android:2b646136f4719d1a316355" />
-                  <option name="projectId" value="d4rk-plus-apps---android" />
-                  <option name="projectNumber" value="112794310224" />
+                  <option name="mobileSdkAppId" value="1:1093421751302:android:6705202657b17bbebb7787" />
+                  <option name="projectId" value="music-sleep-timer-for-android" />
+                  <option name="projectNumber" value="1093421751302" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
