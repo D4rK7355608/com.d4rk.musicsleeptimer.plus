@@ -13,9 +13,9 @@ android {
     defaultConfig {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 23
-        targetSdk = 35
-        versionCode = 33
-        versionName = "3.0.4"
+        targetSdk = 36
+        versionCode = 34
+        versionName = "3.0.5"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         @Suppress("UnstableApiUsage") androidResources.localeFilters += listOf(
             "en" ,

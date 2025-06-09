@@ -1,3 +1,14 @@
+# Version 3.0.5:
+
+- **Minor**: Updated Android Gradle Plugin (AGP) to 8.10.1.
+- **Minor**: Updated AppCompat to 1.7.1.
+- **Minor**: Updated Firebase BoM to 33.15.0.
+- **Minor**: Updated Kotlin to 2.1.21.
+- **Minor**: Updated Google Firebase Crashlytics to 3.0.4.
+- **Minor**: Updated Gradle Wrapper to 8.14.2-bin.
+- **Minor**: Updated target SDK to 36.
+- **Minor**: Added various Google Analytics metadata tags to `AndroidManifest.xml`.
+
 # Version 3.0.4:
 
 - **Minor**: Under-the-hood improvements for a better overall app experience.
