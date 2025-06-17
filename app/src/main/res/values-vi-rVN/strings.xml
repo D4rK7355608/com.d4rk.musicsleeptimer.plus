@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle">Nhấn để bắt đầu</string>
+    <string name="app_description">Đặt nhạc của bạn dừng lại sau khi bạn ngủ thiếp đi</string>
+</resources>
