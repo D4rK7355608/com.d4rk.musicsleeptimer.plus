@@ -1,9 +1,8 @@
 # Version 3.0.5:
 
-- Added new translations so the app now speaks Arabic (Egypt), Bengali (Bangladesh), Spanish (Mexico), Filipino (Philippines), Korean (South Korea), Urdu (Pakistan), and Vietnamese (Vietnam).
-- Removed the outdated Finnish (Philippines) translation.
-- Updated our build tools and libraries to keep everything running smoothly on Android 14 (target SDK 36).
-- Improved our analytics setup for better crash reporting.
+- **New**: Added new translations so the app now speaks Arabic (Egypt), Bengali (Bangladesh), Spanish (Mexico), Filipino (Philippines), Korean (South Korea), Urdu (Pakistan), and Vietnamese (Vietnam).
+- **Minor**: Updated our build tools and libraries to keep everything running smoothly.
+- **Minor**: Improved our analytics setup for better crash reporting.
 
 # Version 3.0.4:
 
