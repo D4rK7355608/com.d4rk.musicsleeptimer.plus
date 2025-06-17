@@ -12,7 +12,6 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Icon
 import android.os.Build
-import androidx.annotation.RequiresApi
 import com.d4rk.musicsleeptimer.plus.R
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.CANCEL
 import com.d4rk.musicsleeptimer.plus.notifications.SleepNotification.Action.DECREMENT
@@ -26,7 +25,6 @@ import java.util.Date
 import java.util.concurrent.TimeUnit.MILLISECONDS
 import java.util.concurrent.TimeUnit.MINUTES
 
-@RequiresApi(Build.VERSION_CODES.O)
 object SleepNotification {
     private val TIMEOUT_INITIAL_MILLIS : Long = MINUTES.toMillis(30)
     private val TIMEOUT_INCREMENT_MILLIS : Long = MINUTES.toMillis(10)
@@ -86,23 +84,52 @@ object SleepNotification {
     private fun Context.show(timeout : Long = TIMEOUT_INITIAL_MILLIS) {
         require(timeout > 0)
         val eta : Long = currentTimeMillis() + timeout
-        val notification : Notification =
-                Notification.Builder(this , getString(R.string.notification_channel_id)).setCategory(CATEGORY_EVENT).setVisibility(VISIBILITY_PUBLIC).setOnlyAlertOnce(true).setOngoing(true).setSmallIcon(R.drawable.ic_music_off).setSubText(DateFormat.getTimeInstance(SHORT).format(Date(eta)))
-                        .setShowWhen(true).setWhen(eta).setUsesChronometer(true).setChronometerCountDown(true).setTimeoutAfter(timeout).setDeleteIntent(SleepAudioWorker.pendingIntent(this)) // FIXME: Unresolved reference: pendingIntent
-                        .addAction(INCREMENT.action(this).build()).addAction(
-                            DECREMENT.action(this , cancel = timeout <= TIMEOUT_DECREMENT_MILLIS).build()
-                        ).addAction(CANCEL.action(this).build()).build()
-        createNotificationChannel()
-        notificationManager()?.notify(R.id.notification_id , notification)
+        val builder : Notification.Builder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Notification.Builder(this, getString(R.string.notification_channel_id))
+        } else {
+            @Suppress("DEPRECATION")
+            Notification.Builder(this)
+        }
+
+        val notification : Notification = builder
+            .setCategory(CATEGORY_EVENT)
+            .setVisibility(VISIBILITY_PUBLIC)
+            .setOnlyAlertOnce(true)
+            .setOngoing(true)
+            .setSmallIcon(R.drawable.ic_music_off)
+            .setSubText(DateFormat.getTimeInstance(SHORT).format(Date(eta)))
+            .setShowWhen(true)
+            .setWhen(eta)
+            .setUsesChronometer(true)
+            .setChronometerCountDown(true)
+            .setTimeoutAfter(timeout)
+            .apply {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    setDeleteIntent(SleepAudioWorker.pendingIntent(this@show))
+                }
+            }
+            .addAction(INCREMENT.action(this).build())
+            .addAction(
+                DECREMENT.action(this, cancel = timeout <= TIMEOUT_DECREMENT_MILLIS).build()
+            )
+            .addAction(CANCEL.action(this).build())
+            .build()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            createNotificationChannel()
+        }
+        notificationManager()?.notify(R.id.notification_id, notification)
     }
 
     private fun Context.createNotificationChannel() {
-        val id : String = getString(R.string.notification_channel_id)
-        val name : CharSequence = getString(R.string.app_name)
-        val channel : NotificationChannel = NotificationChannel(id , name , IMPORTANCE_LOW).apply {
-            setBypassDnd(true)
-            lockscreenVisibility = VISIBILITY_PUBLIC
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val id : String = getString(R.string.notification_channel_id)
+            val name : CharSequence = getString(R.string.app_name)
+            val channel : NotificationChannel = NotificationChannel(id, name, IMPORTANCE_LOW).apply {
+                setBypassDnd(true)
+                lockscreenVisibility = VISIBILITY_PUBLIC
+            }
+            notificationManager()?.createNotificationChannel(channel)
         }
-        notificationManager()?.createNotificationChannel(channel)
     }
 }
