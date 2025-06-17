@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle">Toque para comenzar</string>
+    <string name="app_description">Pon tu música para que se detenga después de que te duermas</string>
+</resources>
