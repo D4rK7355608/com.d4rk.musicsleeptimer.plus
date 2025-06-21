@@ -8,13 +8,13 @@ plugins {
 }
 
 android {
-    compileSdk = 35
+    compileSdk = 36
     namespace = "com.d4rk.musicsleeptimer.plus"
     defaultConfig {
         applicationId = "com.d4rk.musicsleeptimer.plus"
         minSdk = 23
         targetSdk = 36
-        versionCode = 34
+        versionCode = 35
         versionName = "3.0.5"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         @Suppress("UnstableApiUsage") androidResources.localeFilters += listOf(
